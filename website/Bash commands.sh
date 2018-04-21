@@ -21,3 +21,4 @@ git add file1 file2 file3                                 # Adds file or folder 
 git commit -m "Message"                                   # Commits the files you added with -m "Message", replace "" with unique message
 git push                                                  # Push your changes into the repo officially
 git branch                                                # Show all the branches you have and see which one you're in
+git log                                                   # Show all commits ever made to branch
