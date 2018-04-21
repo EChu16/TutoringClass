@@ -1,0 +1,34 @@
+#adiv {
+    text-align: center;
+    color: grey;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Tahoma;
+}
+#aspan {
+    text-align: right;
+    color: blue;
+    font-size: 22px;
+    font-weight: 200;
+    font-family: Avenir;
+}
+.div {
+    color: red;
+    float:right;
+}
+body {
+    background-color: yellow;
+}
+#bdiv {
+    position: relative;
+}
+#bspan {
+    position: absolute;
+}
+.centerDiv {
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    border: thin solid black;
+    align-items: center;
+}

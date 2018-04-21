@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Erich Javascript</title>
+        <script type="text/javascript">
+            toggle = true;
+            function turnIntoACoolDiv() {
+                var mydiv = document.getElementById('div1');
+                mydiv.style.color = "blue";
+                mydiv.style.fontSize = "52px"
+                mydiv.style.fontWeight = "bold";
+                function evenCoolerDiv() {
+                    mydiv.style.textAlign = "center";
+                    toggle = false;
+                }
+                if (toggle) {
+                    evenCoolerDiv();
+                } else {
+                    mydiv.style.textAlign = "left";
+                    toggle = true;
+                }
+            }
+            console.log("Debugging mode activated...");
+        </script>
+    </head>
+    <body>
+        <div id="div1" onclick="turnIntoACoolDiv()">Hello I'm a Div, click to turn me into a k00l kid</div>
+        <script type="text/javascript">
+            var hello = "hello";
+            var isTrue = true;
+            var num = 1;
+            if (hello === "hello") {
+                console.log(hello);
+            }
+            if (num) {
+                console.log("it's true!");
+            }
+            if (num === true) {
+                console.log("They are definitely true");
+            }
+            if (num !== true) {
+                console.log("They are definitely not true");
+            }
+            if (num === 1 && isTrue) {
+                console.log("Hurrah");
+            }
+            if (num === 1 && !isTrue) {
+                console.log("This shouldn't appear");
+            }
+            if (num === 1 || !isTrue) {
+                console.log("This works!");
+            }
+
+            i = 20;
+            console.log("Initial variable i: " + i);
+
+            function foo(maxNum=5) {
+                for (var i = 1 ; i <= maxNum; i++) {
+                    console.log(i);
+                }
+            }
+            foo(10);
+            foo();
+
+            console.log("Final variable i: " + i);
+        </script>
+    </body>
+</html>

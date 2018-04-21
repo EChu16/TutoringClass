@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Class 4</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // This is a single line comment
+        /*
+            This is a for loop, where i is 0, checks if i is less than 10,
+            executes whatever is in the squiggly braces, then executes whatever
+            is in the last part of the for loop
+            step1 = instantiate a variable with a value
+            step2 = check the variable against a condition (must return True/False)
+            step3 = the actions you want to execute if the condition is true
+            step4 = action that is executed ONLY if the body (step3) occurs. this is supposed to break
+            the condition in step2 eventually
+            for (step1, step2, step4) {
+                step3
+            }
+        */
+        c = 5;
+        for(var i = 0; i < 10; i++, c+=2) {
+            if (i < 3) {
+                continue;
+            }
+
+            if (i === 5) {
+                break;
+            }
+
+            console.log("i = " + i);
+            console.log("c = " + c);
+        }
+
+        /*
+            = : assignment , i.e counter = 10 means the variable "counter" is given the value 10
+            == : soft comparison, i.e a = 20, b = 20, a == b results in true because this only compares the value
+            === : hard comparison, compares the value and object types
+        */
+
+        /*
+            This is a while loop, where it checks if the condition is true. if it is, run the statement inside
+            NOTE: It is ALWAYS important to ensure that the condition can eventually return false.
+            step1 = the condition being checked
+            step2 = the actions to be executed if condition is true
+            while(step1) {
+                step2
+            }
+        */
+        num = 0;
+        while(num < 10) {
+            console.log(num);
+            num++;
+        }
+
+
+    </script>
+</body>
+</html>
